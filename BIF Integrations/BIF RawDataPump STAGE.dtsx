@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/12/2011 12:58:18 PM"
@@ -7,12 +7,12 @@
   DTS:CreatorName="SIGMA\krmo1241"
   DTS:DTSID="{2EAEF3BC-B999-49B2-A5AE-3A05BBB8CC6A}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3008.28"
+  DTS:LastModifiedProductVersion="14.0.3026.27"
   DTS:LocaleID="1053"
   DTS:ObjectName="BIF RawDataPump STAGE"
   DTS:PackageType="5"
-  DTS:VersionBuild="328"
-  DTS:VersionGUID="{9AB1FD86-56E5-4162-8C6A-0B782F1D8B53}">
+  DTS:VersionBuild="329"
+  DTS:VersionGUID="{B22BD6DE-A4FC-4A75-9014-D3ED0D65A78E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -730,13 +730,13 @@
           </DTS:ForEachVariableMappings>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Container\Get InegrationKeys"
+          DTS:refId="Package\Container\Get IntegrationKeys"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{8CBB6A15-2648-4622-87F7-484C135E6C6F}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Get InegrationKeys"
+          DTS:ObjectName="Get IntegrationKeys"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -763,7 +763,7 @@
           DTS:refId="Package\Container.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
           DTS:DTSID="{E3812969-554C-476B-B5E2-A3ED07A241C9}"
-          DTS:From="Package\Container\Get InegrationKeys"
+          DTS:From="Package\Container\Get IntegrationKeys"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
           DTS:To="Package\Container\Foreach Loop Container" />
@@ -1218,7 +1218,7 @@
           TopLeft="89,147" />
         <NodeLayout
           Size="171,42"
-          Id="Package\Container\Get InegrationKeys"
+          Id="Package\Container\Get IntegrationKeys"
           TopLeft="74,44" />
         <EdgeLayout
           Id="Package\Container.PrecedenceConstraints[Constraint]"
